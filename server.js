@@ -1,12 +1,11 @@
 import express from "express";
 import cors from "cors";
-import fetch from "node-fetch";
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-const API_KEY = "YOUR_API_KEY"; // 🔥 yaha apni API key daal
+const API_KEY = "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"; // 🔥 yaha apni API key daal
 
 app.post("/chat", async (req, res) => {
   try {
